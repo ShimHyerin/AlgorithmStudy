@@ -1,7 +1,14 @@
-l = []
+import sys
+input = sys.stdin.readline
+
 n = int(input())
+
+res = []
 for i in range(n):
-    tmp = int(input())
-    if tmp == 0: l.pop(-1)
-    else: l.append(tmp)
-print(sum(l))
+    k = int(input())
+    if k == 0 and res:
+        res.pop()
+    else:
+        res.append(k)
+
+print(sum(res))
