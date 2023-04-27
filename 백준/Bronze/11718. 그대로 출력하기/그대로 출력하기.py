@@ -1,3 +1,5 @@
 while True:
-    try:print(input())
-    except EOFError: break
+    try:
+        print(input())
+    except EOFError:
+        break
