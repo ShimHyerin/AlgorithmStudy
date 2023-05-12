@@ -1,9 +1,6 @@
-import sys
-input = sys.stdin.readline
-
 s = input()
-ans = ''
 for i in s:
-    if i.isupper() is True: ans += i.lower()
-    else: ans += i. upper()
-print(ans)
+    if i.isupper():
+        print(i.lower(), end='')
+    else:
+        print(i.upper(), end='')
